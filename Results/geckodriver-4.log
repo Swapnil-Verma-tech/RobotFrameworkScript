@@ -1,0 +1,19 @@
+1621951497578	geckodriver	INFO	Listening on 127.0.0.1:49577
+1621951500634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SWAPNI~1.VER\\AppData\\Local\\Temp\\rust_mozprofileaOILM9"
+1621951501205	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621951504516	Marionette	INFO	Listening on port 49586
+1621951504860	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.infobeans.com/wp-content/themes/infobeans/js/main.js?ver=4.9.18, line 239: TypeError: $.cookie is not a function
+JavaScript error: https://www.infobeans.com/, line 826: TypeError: $.stellar is not a function
+JavaScript error: https://www.infobeans.com/contact-us, line 627: ReferenceError: ga is not defined
+JavaScript error: https://www.infobeans.com/contact-us, line 1131: SyntaxError: missing name after . operator
+JavaScript error: https://www.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js?ver=4.9.18, line 2: TypeError: $(...).slick is not a function
+JavaScript error: https://www.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js?ver=4.9.18, line 169: TypeError: $(...).slick is not a function
+JavaScript error: https://www.infobeans.com/wp-content/themes/infobeans/assets/js/jquery.min.js?ver=4.9.18, line 2: TypeError: r.getClientRects is not a function
+JavaScript error: https://www.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js?ver=4.9.18, line 396: TypeError: $(...).slick is not a function
+JavaScript error: https://www.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js?ver=4.9.18, line 425: TypeError: $(...).slick is not a function
+1621951564812	Marionette	INFO	Stopped listening on port 49586
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -1,0 +1,20 @@
+1621951345174	geckodriver	INFO	Listening on 127.0.0.1:49268
+1621951348269	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SWAPNI~1.VER\\AppData\\Local\\Temp\\rust_mozprofilekFFlZF"
+1621951349690	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621951353639	Marionette	INFO	Listening on port 49277
+1621951354107	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/js/main.js?ver=5.7.2, line 239: TypeError: $.cookie is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/plugins/wp-user-avatar/assets/js/member-directory.min.js?ver=3.1.2, line 1: TypeError: e(...).select2 is not a function
+JavaScript error: https://beta.infobeans.com/, line 877: TypeError: $.stellar is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/plugins/wp-user-avatar/assets/js/member-directory.min.js?ver=3.1.2, line 1: TypeError: e(...).select2 is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/assets/js/jquery.min.js?ver=5.7.2, line 2: TypeError: r.getClientRects is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js, line 17: TypeError: $(...).slick is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js, line 184: TypeError: $(...).slick is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js, line 411: TypeError: $(...).slick is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/assets/js/inner-redesign.js, line 440: TypeError: $(...).slick is not a function
+1621951396036	Marionette	INFO	Stopped listening on port 49277
+[Child 7304, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210525 19:32:24.770" rpa="false" schemaversion="2">
+<suite id="s1" name="InfobeansAutomationScript" source="C:\Users\Swapnil.Verma\PycharmProjects\Infobeans_Web\Test_Script\InfobeansAutomationScript.robot">
+<test id="s1-t1" name="Test-Case-1 Validate the ServiceNow Page Load and Text of Main and Sub Heading on Page">
+<kw name="Begin Web Test" library="BaseCommonScript" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210525 19:32:25.102" level="INFO">Opening browser 'Firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210525 19:32:25.107" level="INFO">Firefox driver log is always forced to to: C:\Users\Swapnil.Verma\PycharmProjects\Infobeans_Web\results\geckodriver-1.log</msg>
+<status status="PASS" starttime="20210525 19:32:25.101" endtime="20210525 19:32:34.171"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210525 19:32:34.171" endtime="20210525 19:32:34.177"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:25.101" endtime="20210525 19:32:34.178"/>
+</kw>
+<kw name="Go to Landing Page of Beta" library="InfoBeansAutomationScriptApp">
+<kw name="Navigate To Beta URl" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL_Beta}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210525 19:32:34.180" level="INFO">Opening url 'https://beta.infobeans.com/'</msg>
+<status status="PASS" starttime="20210525 19:32:34.180" endtime="20210525 19:32:53.953"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:34.179" endtime="20210525 19:32:53.953"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:34.179" endtime="20210525 19:32:53.953"/>
+</kw>
+<kw name="Click on Cookies Button on Main Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Cookies Button" library="Cookies">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=catapultCookie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210525 19:32:53.957" level="INFO">Clicking button 'id=catapultCookie'.</msg>
+<status status="PASS" starttime="20210525 19:32:53.955" endtime="20210525 19:32:54.630"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:53.955" endtime="20210525 19:32:54.631"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:53.954" endtime="20210525 19:32:54.631"/>
+</kw>
+<kw name="Verify the InfoBeans Page Load" library="InfoBeansAutomationScriptApp">
+<kw name="Verify Page Load" library="Cookies">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>InfoBeans</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210525 19:32:54.633" endtime="20210525 19:32:54.818"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:54.633" endtime="20210525 19:32:54.818"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:54.632" endtime="20210525 19:32:54.819"/>
+</kw>
+<kw name="Click on MainMenu Beta Link" library="InfoBeansAutomationScriptApp">
+<kw name="Click on 3 line Breadcrumbs Beta" library="MainMenuBreadCrumb">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="toggles"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:32:54.821" level="INFO">Clicking element 'xpath=//*[@id="toggles"]'.</msg>
+<status status="PASS" starttime="20210525 19:32:54.821" endtime="20210525 19:32:55.346"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:32:58.361" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:32:55.346" endtime="20210525 19:32:58.361"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:54.819" endtime="20210525 19:32:58.362"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:54.819" endtime="20210525 19:32:58.362"/>
+</kw>
+<kw name="Click on ServiceNow Link in Main Menu" library="InfoBeansAutomationScriptApp">
+<kw name="Click on ServiceNow on Main Menu" library="MainMenuBreadCrumb">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=ServiceNow</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210525 19:32:58.366" level="INFO">Clicking link 'link=ServiceNow'.</msg>
+<status status="PASS" starttime="20210525 19:32:58.366" endtime="20210525 19:33:10.973"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:33:13.979" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:33:10.973" endtime="20210525 19:33:13.979"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:58.365" endtime="20210525 19:33:13.980"/>
+</kw>
+<status status="PASS" starttime="20210525 19:32:58.363" endtime="20210525 19:33:13.981"/>
+</kw>
+<kw name="Validation of Main Heading of ServiceNow Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Main Heading of Servcice_Now Page" library="ServiceNowPage">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>${Service_Now_Main_Heading}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:33:14.003" level="INFO">${Main_Heading} = ServiceNow®</msg>
+<status status="PASS" starttime="20210525 19:33:13.984" endtime="20210525 19:33:14.003"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>ServiceNow®</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:33:14.003" endtime="20210525 19:33:14.004"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:33:16.005" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:33:14.004" endtime="20210525 19:33:16.005"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:13.983" endtime="20210525 19:33:16.006"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:13.982" endtime="20210525 19:33:16.007"/>
+</kw>
+<kw name="Validation of Sub Heading of ServiceNow Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Sub Heading of Service_Now Page" library="ServiceNowPage">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Sub_Heading}</var>
+<arg>${Sub_Heading_Service_Now}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:33:16.031" level="INFO">${Sub_Heading} = Build cost-effective future workflows with us</msg>
+<status status="PASS" starttime="20210525 19:33:16.012" endtime="20210525 19:33:16.031"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Sub_Heading}</arg>
+<arg>${Service_Now_Sub_Heading}</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:33:16.031" endtime="20210525 19:33:16.032"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210525 19:33:16.032" endtime="20210525 19:33:16.032"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:16.010" endtime="20210525 19:33:16.033"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:16.009" endtime="20210525 19:33:16.033"/>
+</kw>
+<kw name="End Web Test" library="BaseCommonScript" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210525 19:33:16.034" endtime="20210525 19:33:17.500"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:16.034" endtime="20210525 19:33:17.500"/>
+</kw>
+<doc>This test-case verify the Page load with Main and Sub Heading of Service Now page</doc>
+<tag>Test-case-1 Service Now Page</tag>
+<status status="PASS" starttime="20210525 19:32:25.100" endtime="20210525 19:33:17.501"/>
+</test>
+<test id="s1-t2" name="Test-Case-2 Validate the Digital Transformation Page Load and Text of Main and Sub Heading on Page">
+<kw name="Begin Web Test" library="BaseCommonScript" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210525 19:33:17.505" level="INFO">Opening browser 'Firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210525 19:33:17.506" level="INFO">Firefox driver log is always forced to to: C:\Users\Swapnil.Verma\PycharmProjects\Infobeans_Web\results\geckodriver-2.log</msg>
+<status status="PASS" starttime="20210525 19:33:17.505" endtime="20210525 19:33:24.922"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210525 19:33:24.922" endtime="20210525 19:33:24.929"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:17.505" endtime="20210525 19:33:24.929"/>
+</kw>
+<kw name="Go to Landing Page of Beta" library="InfoBeansAutomationScriptApp">
+<kw name="Navigate To Beta URl" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL_Beta}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210525 19:33:24.931" level="INFO">Opening url 'https://beta.infobeans.com/'</msg>
+<status status="PASS" starttime="20210525 19:33:24.931" endtime="20210525 19:33:37.163"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:24.930" endtime="20210525 19:33:37.163"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:24.930" endtime="20210525 19:33:37.164"/>
+</kw>
+<kw name="Click on Cookies Button on Main Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Cookies Button" library="Cookies">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=catapultCookie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210525 19:33:37.167" level="INFO">Clicking button 'id=catapultCookie'.</msg>
+<status status="PASS" starttime="20210525 19:33:37.166" endtime="20210525 19:33:37.745"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:37.165" endtime="20210525 19:33:37.746"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:37.164" endtime="20210525 19:33:37.746"/>
+</kw>
+<kw name="Verify the InfoBeans Page Load" library="InfoBeansAutomationScriptApp">
+<kw name="Verify Page Load" library="Cookies">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>InfoBeans</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210525 19:33:37.762" endtime="20210525 19:33:37.825"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:37.761" endtime="20210525 19:33:37.826"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:37.760" endtime="20210525 19:33:37.826"/>
+</kw>
+<kw name="Click on Digital Transformation link on Main Page of Infobeans" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Digital Transformation Link" library="MainMenuBreadCrumb">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=View Digital Transformation Services</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210525 19:33:37.828" level="INFO">Clicking link 'link=View Digital Transformation Services'.</msg>
+<status status="PASS" starttime="20210525 19:33:37.828" endtime="20210525 19:33:47.610"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:33:50.620" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:33:47.610" endtime="20210525 19:33:50.621"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:37.827" endtime="20210525 19:33:50.622"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:37.827" endtime="20210525 19:33:50.623"/>
+</kw>
+<kw name="Validation of Main Heading of Digital Transformaton Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Main Heading of Digital Transformation Page" library="DigitalTransformation">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>${Digital Transformation_Get_Main_Heading}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:33:50.669" level="INFO">${Main_Heading} = Digital Transformation</msg>
+<status status="PASS" starttime="20210525 19:33:50.628" endtime="20210525 19:33:50.669"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>Digital Transformation</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:33:50.670" endtime="20210525 19:33:50.673"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:33:52.682" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:33:50.674" endtime="20210525 19:33:52.683"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:50.627" endtime="20210525 19:33:52.683"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:50.625" endtime="20210525 19:33:52.684"/>
+</kw>
+<kw name="Validation of Sub Heanding of Digital Transformation Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Sub Heading of Digital Transformation Page" library="DigitalTransformation">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Sub_Heading}</var>
+<arg>${Sub_Heading_Digital Transformation}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:33:52.706" level="INFO">${Sub_Heading} = From leadership-level strategy to ground level implementation</msg>
+<status status="PASS" starttime="20210525 19:33:52.686" endtime="20210525 19:33:52.706"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Sub_Heading}</arg>
+<arg>${Digital Transformation_Sub_Heading}</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:33:52.707" endtime="20210525 19:33:52.708"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:33:54.712" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:33:52.708" endtime="20210525 19:33:54.713"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:52.686" endtime="20210525 19:33:54.714"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:52.685" endtime="20210525 19:33:54.715"/>
+</kw>
+<kw name="End Web Test" library="BaseCommonScript" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210525 19:33:54.719" endtime="20210525 19:33:56.066"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:54.717" endtime="20210525 19:33:56.066"/>
+</kw>
+<doc>This test-case verify the page load with Main and Sub Heading of Digital Transformation Page</doc>
+<tag>Test-case-2 Digital transformation Page</tag>
+<status status="PASS" starttime="20210525 19:33:17.504" endtime="20210525 19:33:56.067"/>
+</test>
+<test id="s1-t3" name="Test-Case-3 Validate the Case Studies page and Download a Case Study">
+<kw name="Begin Web Test" library="BaseCommonScript" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210525 19:33:56.072" level="INFO">Opening browser 'Firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210525 19:33:56.073" level="INFO">Firefox driver log is always forced to to: C:\Users\Swapnil.Verma\PycharmProjects\Infobeans_Web\results\geckodriver-3.log</msg>
+<status status="PASS" starttime="20210525 19:33:56.071" endtime="20210525 19:34:03.453"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210525 19:34:03.453" endtime="20210525 19:34:03.457"/>
+</kw>
+<status status="PASS" starttime="20210525 19:33:56.070" endtime="20210525 19:34:03.457"/>
+</kw>
+<kw name="Go to Landing Page of Beta" library="InfoBeansAutomationScriptApp">
+<kw name="Navigate To Beta URl" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL_Beta}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210525 19:34:03.459" level="INFO">Opening url 'https://beta.infobeans.com/'</msg>
+<status status="PASS" starttime="20210525 19:34:03.459" endtime="20210525 19:34:24.116"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:03.458" endtime="20210525 19:34:24.116"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:03.457" endtime="20210525 19:34:24.117"/>
+</kw>
+<kw name="Click on Cookies Button on Main Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Cookies Button" library="Cookies">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=catapultCookie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:24.119" level="INFO">Clicking button 'id=catapultCookie'.</msg>
+<status status="PASS" starttime="20210525 19:34:24.119" endtime="20210525 19:34:24.758"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:24.118" endtime="20210525 19:34:24.758"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:24.118" endtime="20210525 19:34:24.759"/>
+</kw>
+<kw name="Verify the InfoBeans Page Load" library="InfoBeansAutomationScriptApp">
+<kw name="Verify Page Load" library="Cookies">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>InfoBeans</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210525 19:34:24.763" endtime="20210525 19:34:24.816"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:24.762" endtime="20210525 19:34:24.816"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:24.761" endtime="20210525 19:34:24.817"/>
+</kw>
+<kw name="Click on MainMenu Beta Link" library="InfoBeansAutomationScriptApp">
+<kw name="Click on 3 line Breadcrumbs Beta" library="MainMenuBreadCrumb">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="toggles"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:24.821" level="INFO">Clicking element 'xpath=//*[@id="toggles"]'.</msg>
+<status status="PASS" starttime="20210525 19:34:24.820" endtime="20210525 19:34:25.237"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:34:28.248" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:34:25.238" endtime="20210525 19:34:28.248"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:24.819" endtime="20210525 19:34:28.249"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:24.819" endtime="20210525 19:34:28.249"/>
+</kw>
+<kw name="Click on Resources link in Main Menu" library="InfoBeansAutomationScriptApp">
+<kw name="Move to Resourse link on MainMenu Page" library="MainMenuBreadCrumb">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>link=RESOURCES</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210525 19:34:28.251" level="INFO">Simulating Mouse Over on element 'link=RESOURCES'.</msg>
+<status status="PASS" starttime="20210525 19:34:28.251" endtime="20210525 19:34:28.725"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:34:31.732" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:34:28.725" endtime="20210525 19:34:31.732"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:28.250" endtime="20210525 19:34:31.732"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:28.249" endtime="20210525 19:34:31.732"/>
+</kw>
+<kw name="Click on CaseStudies link in Main Menu" library="InfoBeansAutomationScriptApp">
+<kw name="Click on CaseStudies link on MainMenu Page" library="MainMenuBreadCrumb">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Case Studies</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:31.735" level="INFO">Clicking link 'link=Case Studies'.</msg>
+<status status="PASS" starttime="20210525 19:34:31.734" endtime="20210525 19:34:46.712"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:31.734" endtime="20210525 19:34:46.714"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:31.733" endtime="20210525 19:34:46.715"/>
+</kw>
+<kw name="Validation of Main Heading of Case Studies Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Main Heading of Servcice_Now Page" library="CaseStudies">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>${CaseStudies_Main_Heading}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:46.863" level="INFO">${Main_Heading} = Case Studies</msg>
+<status status="PASS" starttime="20210525 19:34:46.730" endtime="20210525 19:34:46.863"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>Case Studies</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:34:46.863" endtime="20210525 19:34:46.865"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210525 19:34:46.865" endtime="20210525 19:34:46.866"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:46.727" endtime="20210525 19:34:46.867"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:46.725" endtime="20210525 19:34:46.867"/>
+</kw>
+<kw name="Click on download icon on case studies page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Download icon" library="CaseStudies">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Download_Icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:46.875" level="INFO">Clicking element 'xpath=//*[@id="load_more"]/div[1]/div[2]/div[2]/div[1]/img'.</msg>
+<status status="PASS" starttime="20210525 19:34:46.872" endtime="20210525 19:34:47.164"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:46.871" endtime="20210525 19:34:47.166"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:46.870" endtime="20210525 19:34:47.167"/>
+</kw>
+<kw name="Fill the form to download case study" library="InfoBeansAutomationScriptApp">
+<kw name="Fill the form" library="CaseStudies">
+<kw name="Page Should Contain Textfield" library="SeleniumLibrary">
+<arg>css=#wpcf7-f9861-o4 &gt; form &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div &gt; span &gt; input</arg>
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<msg timestamp="20210525 19:34:47.209" level="INFO">Current page contains text field 'css=#wpcf7-f9861-o4 &gt; form &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div &gt; span &gt; input'.</msg>
+<status status="PASS" starttime="20210525 19:34:47.172" endtime="20210525 19:34:47.209"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210525 19:34:47.210" endtime="20210525 19:34:47.210"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Full_Name}</arg>
+<arg>Casestudies</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:47.212" level="INFO">Typing text 'Casestudies' into text field 'css=#wpcf7-f9861-o4 &gt; form &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div &gt; span &gt; input'.</msg>
+<status status="PASS" starttime="20210525 19:34:47.211" endtime="20210525 19:34:47.299"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:34:48.314" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210525 19:34:47.300" endtime="20210525 19:34:48.315"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>swapnilk.verma@infobeans.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:48.317" level="INFO">Typing text 'swapnilk.verma@infobeans.com' into text field 'xpath=//*[@id="wpcf7-f9861-o4"]/form/div[3]/div[2]/div/span/input'.</msg>
+<status status="PASS" starttime="20210525 19:34:48.316" endtime="20210525 19:34:48.452"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:34:49.466" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210525 19:34:48.453" endtime="20210525 19:34:49.466"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Download_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:49.468" level="INFO">Clicking element 'xpath=/html/body/section[2]/div/div/div/div[2]/div/div[1]/div[1]/span/div[2]/form/div[5]/div/p/input'.</msg>
+<status status="PASS" starttime="20210525 19:34:49.467" endtime="20210525 19:34:49.766"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:34:52.778" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:34:49.766" endtime="20210525 19:34:52.779"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:47.171" endtime="20210525 19:34:52.781"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:47.170" endtime="20210525 19:34:52.782"/>
+</kw>
+<kw name="Validate the Thank you message after submission of form on page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Download Thankyou message" library="CaseStudies">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Download_Message}</var>
+<arg>${Thank_You_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:34:52.807" level="INFO">${Download_Message} = Thank you for your message. It has been sent.</msg>
+<status status="PASS" starttime="20210525 19:34:52.785" endtime="20210525 19:34:52.807"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Download_Message}</arg>
+<arg>Thank you for your message. It has been sent.</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:34:52.807" endtime="20210525 19:34:52.808"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:34:54.823" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:34:52.808" endtime="20210525 19:34:54.824"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:52.785" endtime="20210525 19:34:54.825"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:52.784" endtime="20210525 19:34:54.826"/>
+</kw>
+<kw name="End Web Test" library="BaseCommonScript" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210525 19:34:54.830" endtime="20210525 19:34:57.557"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:54.828" endtime="20210525 19:34:57.557"/>
+</kw>
+<doc>This test-case verify the page load with Main and Sub Heading of Case Studies and Download the Case Study Page</doc>
+<tag>Test-Case-3 Case Studies Page</tag>
+<status status="PASS" starttime="20210525 19:33:56.069" endtime="20210525 19:34:57.557"/>
+</test>
+<test id="s1-t4" name="Test-Case-4 Validate Contact us page and submit Form">
+<kw name="Begin Web Test" library="BaseCommonScript" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210525 19:34:57.561" level="INFO">Opening browser 'Firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210525 19:34:57.562" level="INFO">Firefox driver log is always forced to to: C:\Users\Swapnil.Verma\PycharmProjects\Infobeans_Web\results\geckodriver-4.log</msg>
+<status status="PASS" starttime="20210525 19:34:57.560" endtime="20210525 19:35:04.919"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210525 19:35:04.920" endtime="20210525 19:35:04.925"/>
+</kw>
+<status status="PASS" starttime="20210525 19:34:57.560" endtime="20210525 19:35:04.925"/>
+</kw>
+<kw name="Go to Landing Page of Live" library="InfoBeansAutomationScriptApp">
+<kw name="Navigate To Live URl" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL_Live}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210525 19:35:04.928" level="INFO">Opening url 'https://www.infobeans.com/'</msg>
+<status status="PASS" starttime="20210525 19:35:04.928" endtime="20210525 19:35:39.463"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:04.927" endtime="20210525 19:35:39.465"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:04.926" endtime="20210525 19:35:39.466"/>
+</kw>
+<kw name="Click on Cookies Button on Main Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Cookies Button" library="Cookies">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=catapultCookie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:39.475" level="INFO">Clicking button 'id=catapultCookie'.</msg>
+<status status="PASS" starttime="20210525 19:35:39.475" endtime="20210525 19:35:40.499"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:39.474" endtime="20210525 19:35:40.500"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:39.473" endtime="20210525 19:35:40.500"/>
+</kw>
+<kw name="Verify the InfoBeans Page Load" library="InfoBeansAutomationScriptApp">
+<kw name="Verify Page Load" library="Cookies">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>InfoBeans</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210525 19:35:40.504" endtime="20210525 19:35:40.568"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:40.503" endtime="20210525 19:35:40.568"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:40.502" endtime="20210525 19:35:40.569"/>
+</kw>
+<kw name="Click on MainMenu Live Link" library="InfoBeansAutomationScriptApp">
+<kw name="Click on 3 line Breadcrumbs Live" library="MainMenuBreadCrumb">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="toggle"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:40.580" level="INFO">Clicking element 'xpath=//*[@id="toggle"]'.</msg>
+<status status="PASS" starttime="20210525 19:35:40.578" endtime="20210525 19:35:41.126"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:35:44.137" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:35:41.127" endtime="20210525 19:35:44.137"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:40.576" endtime="20210525 19:35:44.138"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:40.574" endtime="20210525 19:35:44.139"/>
+</kw>
+<kw name="Click on Contact us link in Main Menu" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Contact us link on Mainmenu Page" library="MainMenuBreadCrumb">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=menu-item-5745</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:44.141" level="INFO">Clicking element 'id=menu-item-5745'.</msg>
+<status status="PASS" starttime="20210525 19:35:44.141" endtime="20210525 19:35:51.395"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:44.140" endtime="20210525 19:35:51.395"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:44.139" endtime="20210525 19:35:51.396"/>
+</kw>
+<kw name="Validation of Main Heading of Contact Us Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Main Heading of Contact Us Page" library="Contact_Us">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>${Contact_Us_Main_Heading}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:52.003" level="INFO">${Main_Heading} = Contact Us</msg>
+<status status="PASS" starttime="20210525 19:35:51.400" endtime="20210525 19:35:52.003"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>Contact Us</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:35:52.004" endtime="20210525 19:35:52.004"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:35:54.009" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:35:52.004" endtime="20210525 19:35:54.010"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:51.399" endtime="20210525 19:35:54.010"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:51.397" endtime="20210525 19:35:54.011"/>
+</kw>
+<kw name="Fill the Contact Us Form on Contact us Page" library="InfoBeansAutomationScriptApp">
+<kw name="Fill the Form For Contact Us" library="Contact_Us">
+<kw name="Page Should Contain Textfield" library="SeleniumLibrary">
+<arg>xpath=//*[@name="Ffirstname"]</arg>
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<msg timestamp="20210525 19:35:54.042" level="INFO">Current page contains text field 'xpath=//*[@name="Ffirstname"]'.</msg>
+<status status="PASS" starttime="20210525 19:35:54.014" endtime="20210525 19:35:54.043"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:35:56.054" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:35:54.043" endtime="20210525 19:35:56.054"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@name="Ffirstname"]</arg>
+<arg>Swap</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:56.055" level="INFO">Typing text 'Swap' into text field 'xpath=//*[@name="Ffirstname"]'.</msg>
+<status status="PASS" starttime="20210525 19:35:56.054" endtime="20210525 19:35:56.128"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:35:57.132" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210525 19:35:56.129" endtime="20210525 19:35:57.132"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@name="Femail"]</arg>
+<arg>Swapnil.verma@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:57.133" level="INFO">Typing text 'Swapnil.verma@gmail.com' into text field 'xpath=//*[@name="Femail"]'.</msg>
+<status status="PASS" starttime="20210525 19:35:57.133" endtime="20210525 19:35:57.191"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:35:58.208" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210525 19:35:57.191" endtime="20210525 19:35:58.208"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@name="Fphone"]</arg>
+<arg>98765434567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:58.208" level="INFO">Typing text '98765434567' into text field 'xpath=//*[@name="Fphone"]'.</msg>
+<status status="PASS" starttime="20210525 19:35:58.208" endtime="20210525 19:35:58.243"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:54.013" endtime="20210525 19:35:58.243"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:54.012" endtime="20210525 19:35:58.244"/>
+</kw>
+<kw name="Click on Contact Us Now on Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click On Contact Us Now Button" library="Contact_Us">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Contact_Now}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:35:58.247" level="INFO">Clicking element 'xpath=//*[@id="wpcf7-f2111-p14-o1"]/form/div[8]/div/input[1]'.</msg>
+<status status="PASS" starttime="20210525 19:35:58.246" endtime="20210525 19:35:58.715"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:36:01.733" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:35:58.716" endtime="20210525 19:36:01.733"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:58.245" endtime="20210525 19:36:01.734"/>
+</kw>
+<status status="PASS" starttime="20210525 19:35:58.245" endtime="20210525 19:36:01.735"/>
+</kw>
+<kw name="Validate the form submission success message" library="InfoBeansAutomationScriptApp">
+<kw name="Validate the Thank You Message" library="Contact_Us">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Contact_Submitted}</var>
+<arg>${Get_Thank_You_Text}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:36:01.791" level="INFO">${Contact_Submitted} = Thank you for your application. Your request has been submitted and a member of our team will be in touch shortly.</msg>
+<status status="PASS" starttime="20210525 19:36:01.741" endtime="20210525 19:36:01.791"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Contact_Submitted}</arg>
+<arg>${Contact_Thank_You_Message}</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:36:01.792" endtime="20210525 19:36:01.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:36:04.802" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210525 19:36:01.797" endtime="20210525 19:36:04.803"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:01.740" endtime="20210525 19:36:04.804"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:01.738" endtime="20210525 19:36:04.805"/>
+</kw>
+<kw name="End Web Test" library="BaseCommonScript" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210525 19:36:04.808" endtime="20210525 19:36:06.444"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:04.806" endtime="20210525 19:36:06.445"/>
+</kw>
+<doc>This test-case verify the page load with Main and Sub Heading of Case Studies and Download the Case Study Page</doc>
+<tag>Test-Case-4 Contact Us Page</tag>
+<status status="PASS" starttime="20210525 19:34:57.559" endtime="20210525 19:36:06.445"/>
+</test>
+<test id="s1-t5" name="Test-Case-5 Validate Sitemap heading and click on link">
+<kw name="Begin Web Test" library="BaseCommonScript" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210525 19:36:06.450" level="INFO">Opening browser 'Firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210525 19:36:06.451" level="INFO">Firefox driver log is always forced to to: C:\Users\Swapnil.Verma\PycharmProjects\Infobeans_Web\results\geckodriver-5.log</msg>
+<status status="PASS" starttime="20210525 19:36:06.449" endtime="20210525 19:36:13.874"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210525 19:36:13.875" endtime="20210525 19:36:13.878"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:06.449" endtime="20210525 19:36:13.878"/>
+</kw>
+<kw name="Go to Landing Page of Beta" library="InfoBeansAutomationScriptApp">
+<kw name="Navigate To Beta URl" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL_Beta}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210525 19:36:13.880" level="INFO">Opening url 'https://beta.infobeans.com/'</msg>
+<status status="PASS" starttime="20210525 19:36:13.880" endtime="20210525 19:36:40.811"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:13.879" endtime="20210525 19:36:40.812"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:13.879" endtime="20210525 19:36:40.813"/>
+</kw>
+<kw name="Click on Cookies Button on Main Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Cookies Button" library="Cookies">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=catapultCookie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210525 19:36:40.816" level="INFO">Clicking button 'id=catapultCookie'.</msg>
+<status status="PASS" starttime="20210525 19:36:40.816" endtime="20210525 19:36:41.556"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:40.815" endtime="20210525 19:36:41.558"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:40.813" endtime="20210525 19:36:41.558"/>
+</kw>
+<kw name="Verify the InfoBeans Page Load" library="InfoBeansAutomationScriptApp">
+<kw name="Verify Page Load" library="Cookies">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>InfoBeans</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210525 19:36:41.562" endtime="20210525 19:36:41.636"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:41.561" endtime="20210525 19:36:41.636"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:41.559" endtime="20210525 19:36:41.637"/>
+</kw>
+<kw name="SiteMap link on Main Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on SiteMap on Main Page of Site" library="SiteMap">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=/html/body/footer/div[1]/div[3]/ul/li[1]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210525 19:36:41.642" level="INFO">Clicking link 'xpath=/html/body/footer/div[1]/div[3]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210525 19:36:41.642" endtime="20210525 19:37:07.757"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210525 19:37:09.766" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210525 19:37:07.758" endtime="20210525 19:37:09.767"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:41.640" endtime="20210525 19:37:09.768"/>
+</kw>
+<status status="PASS" starttime="20210525 19:36:41.639" endtime="20210525 19:37:09.769"/>
+</kw>
+<kw name="Validation of Main Heading of SiteMap on Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Heading on Page" library="SiteMap">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>xpath=//*[@id="home"]/div/div/div/div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:37:09.831" level="INFO">${Main_Heading} = Sitemap</msg>
+<status status="PASS" starttime="20210525 19:37:09.773" endtime="20210525 19:37:09.831"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>Sitemap</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:37:09.831" endtime="20210525 19:37:09.832"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210525 19:37:09.832" endtime="20210525 19:37:09.833"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:09.772" endtime="20210525 19:37:09.833"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:09.771" endtime="20210525 19:37:09.833"/>
+</kw>
+<kw name="Click on &quot;Automation&quot; link on SiteMap Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Automation link" library="SiteMap">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Automation_link}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210525 19:37:09.836" level="INFO">Clicking link 'css=#sitemap-details-block &gt; div &gt; ul &gt; li:nth-child(3) &gt; ul &gt; li:nth-child(2) &gt; a'.</msg>
+<status status="PASS" starttime="20210525 19:37:09.835" endtime="20210525 19:37:32.731"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210525 19:37:32.732" endtime="20210525 19:37:32.733"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:09.835" endtime="20210525 19:37:32.734"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:09.834" endtime="20210525 19:37:32.734"/>
+</kw>
+<kw name="Validation of Main Heading on Automation Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Main Heading on Page" library="SiteMap">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>css=#home &gt; div &gt; div &gt; div &gt; div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:37:32.773" level="INFO">${Main_Heading} = Automation</msg>
+<status status="PASS" starttime="20210525 19:37:32.741" endtime="20210525 19:37:32.773"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>Automation</arg>
+<arg>ingore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:37:32.773" endtime="20210525 19:37:32.774"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:32.740" endtime="20210525 19:37:32.774"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:32.738" endtime="20210525 19:37:32.774"/>
+</kw>
+<kw name="Click Know More link on &quot;Automation&quot; Page" library="InfoBeansAutomationScriptApp">
+<kw name="Click on Know More" library="SiteMap">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>css=#cta-block &gt; div:nth-child(1) &gt; a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210525 19:37:32.780" level="INFO">Clicking link 'css=#cta-block &gt; div:nth-child(1) &gt; a'.</msg>
+<status status="PASS" starttime="20210525 19:37:32.778" endtime="20210525 19:37:44.405"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:32.776" endtime="20210525 19:37:44.406"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:32.775" endtime="20210525 19:37:44.407"/>
+</kw>
+<kw name="Validation of Main Heading of &quot;Robotic Process Automation&quot; Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Page Heading" library="SiteMap">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Main_Heading}</var>
+<arg>css=#home &gt; div &gt; div &gt; div &gt; div.main-heading</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:37:44.479" level="INFO">${Main_Heading} = Robotic Process Automation</msg>
+<status status="PASS" starttime="20210525 19:37:44.419" endtime="20210525 19:37:44.479"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Main_Heading}</arg>
+<arg>Robotic Process Automation</arg>
+<arg>ingore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:37:44.479" endtime="20210525 19:37:44.480"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:44.416" endtime="20210525 19:37:44.480"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:44.413" endtime="20210525 19:37:44.481"/>
+</kw>
+<kw name="Validation of Sub Heading of &quot;Robotic Process Automation&quot; Page" library="InfoBeansAutomationScriptApp">
+<kw name="Validate Sub Heading on Page" library="SiteMap">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Sub_Heading}</var>
+<arg>css=#home &gt; div &gt; div &gt; div &gt; div.sub-heading</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210525 19:37:44.561" level="INFO">${Sub_Heading} = Accelerate your UiPath ROI with our RPA solution</msg>
+<status status="PASS" starttime="20210525 19:37:44.484" endtime="20210525 19:37:44.561"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Sub_Heading}</arg>
+<arg>Accelerate your UiPath ROI with our RPA solution</arg>
+<arg>ingore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210525 19:37:44.561" endtime="20210525 19:37:44.562"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:44.483" endtime="20210525 19:37:44.562"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:44.482" endtime="20210525 19:37:44.562"/>
+</kw>
+<kw name="End Web Test" library="BaseCommonScript" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210525 19:37:44.564" endtime="20210525 19:37:46.075"/>
+</kw>
+<status status="PASS" starttime="20210525 19:37:44.563" endtime="20210525 19:37:46.076"/>
+</kw>
+<doc>This test-case verify the page load with Main Heading of pages and Navigate to different Page</doc>
+<tag>Test-Case-5 SiteMap Page</tag>
+<status status="PASS" starttime="20210525 19:36:06.448" endtime="20210525 19:37:46.077"/>
+</test>
+<doc>Talk about what this suite of tests does</doc>
+<status status="PASS" starttime="20210525 19:32:24.773" endtime="20210525 19:37:46.079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test-case-1 Service Now Page</stat>
+<stat pass="1" fail="0" skip="0">Test-case-2 Digital transformation Page</stat>
+<stat pass="1" fail="0" skip="0">Test-Case-3 Case Studies Page</stat>
+<stat pass="1" fail="0" skip="0">Test-Case-4 Contact Us Page</stat>
+<stat pass="1" fail="0" skip="0">Test-Case-5 SiteMap Page</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="InfobeansAutomationScript">InfobeansAutomationScript</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,16 @@
+1621951436090	geckodriver	INFO	Listening on 127.0.0.1:49472
+1621951439163	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SWAPNI~1.VER\\AppData\\Local\\Temp\\rust_mozprofilenxxSwW"
+1621951439726	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621951442972	Marionette	INFO	Listening on port 49480
+1621951443394	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/js/main.js?ver=5.7.2, line 239: TypeError: $.cookie is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/plugins/wp-user-avatar/assets/js/member-directory.min.js?ver=3.1.2, line 1: TypeError: e(...).select2 is not a function
+JavaScript error: https://beta.infobeans.com/, line 843: TypeError: $.stellar is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/plugins/wp-user-avatar/assets/js/member-directory.min.js?ver=3.1.2, line 1: TypeError: e(...).select2 is not a function
+JavaScript error: https://beta.infobeans.com/wp-content/themes/infobeans/assets/js/jquery.min.js?ver=5.7.2, line 2: TypeError: r.getClientRects is not a function
+1621951494837	Marionette	INFO	Stopped listening on port 49480
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 833: NotAllowedError: Shutting down and refusing additional I/O tasks
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
